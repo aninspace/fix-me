@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence
+        http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+    <persistence-unit name="fixMeMarket" transaction-type="RESOURCE_LOCAL">
+        <class>edu.school42.fixme.market.model.FixMessageEntity</class>
+        <properties>
+            <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://surus.db.elephantsql.com/crdtyvbc" />
+            <property name="javax.persistence.jdbc.user" value="crdtyvbc" />
+            <property name="javax.persistence.jdbc.password" value="B_8i2TTd3Iyo8fpEJUrxbVs_QqAyfZs9" />
+            <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver" />
+            <property name="hibernate.show_sql" value="false" />
+            <property name="hibernate.format_sql" value="false" />
+        </properties>
+    </persistence-unit>
+</persistence>
